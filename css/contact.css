@@ -6,7 +6,7 @@
         }
 
         body {
-            background: #f4f6f9;
+            background: #f9f9f6;
             color: #333;
         }
 
@@ -482,7 +482,55 @@
             color: #0056b3;
         }
 
-        .media-img {
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            /* background: #333; */
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 18px;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+
+        /* Individual colors */
+        .facebook {
+            background: #1877f2;
+        }
+
+        .instagram {
+            background: #DD2A7B;
+        }
+
+        .twitter {
+            background: #1da1f2;
+        }
+
+        .linkedin {
+            background: #0a66c2;
+        }
+
+        /* .youtube {
+            background: #ff0000;
+        } */
+
+
+
+
+        /* .media-img {
             display: inline-block;
             flex: 1;
             border-radius: 4px;
@@ -495,7 +543,7 @@
 
             background-color: rgb(209, 175, 209);
             padding: 3px;
-        }
+        } */
 
 
         .footer {
@@ -563,14 +611,14 @@
             color: #9CA3AF;
         }
 
-        /* Responsive */
+        /* Responsive
         @media(max-width:768px) {
             .footer {
                 padding: 40px 24px 20px;
             }
         }
 
-        /* Responsive */
+        Responsive
         @media (max-width: 768px) {
             .navbar-custom {
                 flex-direction: column;
@@ -590,4 +638,4 @@
             .hero-content p {
                 font-size: 16px;
             }
-        }
+        } */
