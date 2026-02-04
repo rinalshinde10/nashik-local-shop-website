@@ -308,9 +308,12 @@ body {
 
 /* Category card wrapper clickable */
 .category-link {
-  display: block;        /* full card clickable */
-  text-decoration: none; /* remove underline */
-  color: inherit;        /* inherit text color */
+  display: block;
+  /* full card clickable */
+  text-decoration: none;
+  /* remove underline */
+  color: inherit;
+  /* inherit text color */
 }
 
 /* Card styling */
@@ -351,10 +354,21 @@ body {
 }
 
 /* Card colors (customize as needed) */
-.electronics { background: #f4d386; }
-.fashion     { background: #00b4d8; }
-.home        { background: #ffbe0b; }
-.gift        { background: #62c7e0; }
+.electronics {
+  background: #f4d386;
+}
+
+.fashion {
+  background: #00b4d8;
+}
+
+.home {
+  background: #ffbe0b;
+}
+
+.gift {
+  background: #62c7e0;
+}
 
 /* Shops count badge */
 .shop-count {
@@ -375,13 +389,13 @@ body {
   text-align: center;
   box-shadow: 0 6px 20px rgba(14, 14, 14, 0.25);
   transition: 0.3s;
-  
+
 }
 
 .category-card:hover {
   transform: translateY(-8px);
- 
-  }
+
+}
 
 .cat-icon {
   width: 60px;
@@ -586,6 +600,12 @@ body {
   font-size: 14px;
   line-height: 1.7;
   color: #D1D5DB;
+}
+
+.footer-col p i {
+  margin-right: 8px;
+  color: #22C55E;
+  font-size: 14px;
 }
 
 .footer-col ul {
