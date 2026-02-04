@@ -28,12 +28,16 @@ body {
 /* LOGO container */
 .logo {
     display: flex;
+
     /* horizontal layout */
     align-items: center;
+
     /* vertically center all items */
     gap: 8px;
+
     /* space between icon, image, text */
     font-size: 26px;
+    
     /* text size */
     font-weight: 900;
     color: #4f46e5;
@@ -53,7 +57,6 @@ body {
 /* Logo image */
 .logo img {
     height: 35px;
-    /* adjust size as needed */
     width: auto;
     display: block;
 }
@@ -161,7 +164,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-top: 70px; */
+    
 }
 
 .main h1 {
@@ -462,7 +465,6 @@ button:hover {
 .social-icons a {
     width: 40px;
     height: 40px;
-    /* background: #333; */
     color: white;
     border-radius: 50%;
     display: flex;
@@ -477,7 +479,7 @@ button:hover {
     transform: scale(1.1);
 }
 
-/* Individual colors */
+/* icon colors */
 .facebook {
     background: #1877f2;
 }
@@ -494,25 +496,7 @@ button:hover {
     background: #0a66c2;
 }
 
-/* .youtube {
-            background: #ff0000;
-        } */
-
-/* .media-img {
-            display: inline-block;
-            flex: 1;
-            border-radius: 4px;
-            padding: 5px;
-            margin-right: 5px;
-
-        }
-
-        .media-img img:hover {
-
-            background-color: rgb(209, 175, 209);
-            padding: 3px;
-        } */
-
+ /* Footer */
 .footer {
     background: #111827;
     color: #e5e7eb;
