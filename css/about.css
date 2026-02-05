@@ -1,6 +1,12 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
 body {
   background-color: #f9f9f6;
   overflow-x: hidden;
+  
 }
 
 /* ================= NAVBAR ================= */
@@ -11,9 +17,6 @@ body {
   margin-top: -11px;
   margin-left: -20px;
   margin-right: -20px;
-
-   /* box-sizing: border-box; */
-  /* padding-top: 0px; */
   padding: 18px 70px;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -105,7 +108,7 @@ body {
 .nav-links a.active {
   color: #22c55e;
 }
-/*ABOUT PAGE CSS START*/
+/*=================ABOUT PAGE CSS START==============*/
 .page_title{                                                /*page title css*/
 background: linear-gradient(to right,#19196b,#4949f4);
 background-clip: border-box;
@@ -113,8 +116,24 @@ background-clip: border-box;
  -webkit-text-fill-color: transparent;
  font-size: 33px;
  margin-left: 480px;
- /* margin-top: 50px; */
+position: relative;
+display: inline-block;
 
+}
+.page_title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -14px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #6c63ff, transparent);
+    border-radius: 10px;
+    animation: underlineMove 1.6s ease-in-out infinite;
+}
+.page_title:hover{
+   transform: translateY(-5px)scale(1.03);
 }
 
 .text-1{
@@ -146,10 +165,29 @@ background-clip: border-box;
  
  }
 .sub-title1{
-  margin-left: 470px;
-  margin-top: 30px;
-  font-size: 25px;
+  font-size: 30px;
+ margin-left: 470px;
+position: relative;
+display: inline-block;
+color: #0d0d1d;
+
 }
+.sub-title1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -14px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #6c63ff, transparent);
+    border-radius: 10px;
+    animation: underlineMove 1.6s ease-in-out infinite;
+}
+.sub-title1:hover{
+   transform: translateY(-5px)scale(1.03);
+}
+
 .text-2{
   color: rgb(42, 41, 41);
   margin-left:37px;
@@ -157,7 +195,7 @@ background-clip: border-box;
  text-align: center;
  letter-spacing: 0.5px;
  font-size: 18px;
- margin-top: 38px;
+ margin-top: 26px;
   
 }
 .sub-block{                              /* Sub-card in first card*/
@@ -168,7 +206,7 @@ background-clip: border-box;
 }
 
 .card1{
-margin-top: 20px;
+margin-top: 16px;
   height:280px ;
   width: 350px;
 }
@@ -182,15 +220,11 @@ margin-top: 20px;
  margin-left:145px;
  border: 2px rgb(201, 201, 246) solid;
 }
-.sub-card1:hover{
-   
-   transform: rotate(12deg);
-}
 .img1{
   height: 30px;
   width: 30px;
   margin-top: 15px;
-  margin-left: 15px;
+  margin-left: 13px;
 }
 .img3{
   height: 30px;
@@ -217,11 +251,12 @@ margin-top: 20px;
  height: 550px;
  width: 1111px;
  border-radius: 13px;
- margin-top: 60px;
+ margin-top: 120px;
  margin-left: 70px;
  border: 2px rgb(217, 217, 246) solid;
  display: flex;
  flex-wrap: wrap;
+ margin-bottom: 30px;
 
  }
  .third_block:hover{
@@ -362,13 +397,15 @@ border-top: 4px solid #f4b400;
  /*==================== Third block in key area ================*/
 .card6{                                          
 background-color: #eef1ff;
- height: 120px;
+ height: 140px;
  width: 240px;
  border-radius: 12px;
  border: 2px solid rgb(206, 206, 246);
  border-top: 4px solid #4b5de1; 
 text-align: center;
 padding-top: 18px;
+
+
 }
 .card6:hover{
   transform: translateY(-5px)scale(1.03);
@@ -377,7 +414,7 @@ background-color: #d1d9fe;
 }
 .card7{
  background-color:#ffeef3;
- height: 120px;
+ height: 140px;
  width: 240px;
  border-radius: 12px;
  border: 2px solid #f3c0cf;
@@ -394,7 +431,7 @@ padding-top: 18px;
 }
 .card8{
  background-color: #eafff3;
- height: 120px;
+ height: 140px;
  width: 240px;
  border-radius: 12px;
  border: 2px solid rgb(191, 241, 191);
@@ -409,7 +446,7 @@ padding-top: 18px;
 }
 .card9{
  background-color:#fff6df;
- height: 120px;
+ height: 140px;
  width: 240px;
  border-radius: 12px;
  border: 2px solid rgb(242, 242, 174);
@@ -444,7 +481,7 @@ padding-top: 18px;
  
  
 }
-/*==============Second block css============*/
+/*============== Second block css ============*/
 .second_block{                        
    height: 400px;
   width:90%px;                         
@@ -456,7 +493,7 @@ padding-top: 18px;
   justify-content:space-between;
   margin-bottom: -20px;
 }
- /*============Our mission code==============*/
+ /*============ Our mission code ==============*/
 .sub-second-block1{                  
   height: 330px;
   width:530px;
@@ -481,15 +518,16 @@ line-height: 22px;
 }
 .correct-img1{
   height: 20px;
-  width: 20px;
+  width: 21px;
   margin-left: 20px;
 }
+
 .mission-text{
   margin-left: 47px;
-  margin-top: -22px;
+  margin-top: -25px;
   color: rgb(86, 85, 85);
 }
-/*===========Our vission code============*/
+/*=========== Our vission code ============*/
 
 .sub-second-block2{                      
   background-color: #eef1ff;
@@ -541,22 +579,22 @@ margin-top: -41px;
 .img2{
   height: 30px;
   width: 30px;
-  margin-top: 10px;
-  margin-left: 11px;
+  margin-top: 9px;
+  margin-left: 9px;
 }
-/*===============MIDDLE-BLOCK CSS================*/
+/*=============== MIDDLE-BLOCK CSS ================*/
 .middle-block{         
  height: 450px;
   width:90%px;                         
    margin-left: 72px;
   margin-right: 60px;
-  margin-top: -15px;
-
+  margin-top: -43px;
+ 
   display: flex;
   flex-wrap: wrap;
   justify-content:space-between;
 }
-/*============= Why choose NashikLocal CSS============*/
+/*============= Why choose NashikLocal CSS ============*/
 .middle-block1{           
   height:400px ;
   width: 530px;
@@ -605,4 +643,283 @@ margin-top: -41px;
   transform: translateY(-5px)scale(1.03);
   box-shadow: 0 18px 25px -10px  grey;
 }
-/*========= MEDIA QUERY CSS APPLY============*/
+
+/*================FOOTER=====================*/
+.footer {
+  background: #111827;
+  color: #E5E7EB;
+  padding: 60px 60px 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  bottom: 0%;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+/* Logo */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #4F46E5;
+}
+
+.footer-logo i {
+  font-size: 26px;
+}
+
+.footer-logo span {
+  color: #22C55E;
+  display: inline-block;
+  margin-left: -7px;
+}
+
+.footer-col h3 {
+  margin-bottom: 14px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #D1D5DB;
+}
+
+.footer-col p i {
+  margin-right: 8px;
+  color: #22C55E;
+  font-size: 14px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #D1D5DB;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #22C55E;
+  padding-left: 4px;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  font-size: 13px;
+  color: #9CA3AF;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+  .footer {
+    padding: 40px 24px 20px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-custom {
+    flex-direction: column;
+    padding: 15px 25px;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 35px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+}
+
+/* mobile safe */
+@media (max-width: 768px) {
+  .local-scale-card {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 100%;
+  }
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .scale-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 100%;
+  }
+
+  .scale-content h2 {
+    font-size: 24px;
+  }
+}
+/*=====================ABOUT PAGE MEDIA QUERY==========================*/
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Titles */
+  .page_title {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 22px;
+  }
+  .third_block{
+    height: auto;
+  }
+
+  .sub-title1,
+  .sub-title2 {
+    margin: 20px 0 10px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  /* Text */
+  .text-1,
+  .text-2,
+  .text-3,
+  .text-4 {
+    margin: 15px;
+    font-size: 14.5px;
+    text-align: justify;
+  }
+
+  /* Main Cards */
+  .first_block,
+  .third_block {
+    width: 95%;
+    height:auto;
+    margin: 20px auto;
+    margin-bottom: 100px;
+  }
+
+  .first_block {
+    padding-bottom: 20px;
+  }
+
+  /* Sub cards stack */
+  .sub-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card1 {
+    width: 95%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .sub-card1 {
+    margin: 10px auto;
+  }
+
+  /* Second block (Mission / Vision) */
+  .second_block {
+    flex-direction: column;
+    height: auto;
+    margin: 20px;
+  }
+
+  .sub-second-block1,
+  .sub-second-block2 {
+    width: 100%;
+    height: auto;
+    /* margin-bottom: 20px; */
+   
+    
+  }
+
+  /* Middle block */
+  .middle-block {
+    flex-direction: column;
+    height: auto;
+    margin: 20px;
+  }
+
+  .middle-block1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .nsk-img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+
+  /* Key area cards */
+  .sub-block2 {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+  .text-name,
+  .text-name1{
+    margin-left: 82px;
+   
+    
+  }
+  /* LAST CARD BLOCK (card6-9) */
+  .sub-block3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Keep in row */
+    flex-wrap: wrap; /* Allow wrapping only if needed */
+    /* margin: 0 auto; */
+    margin-top: 510px;
+    
+  }
+
+  .card6, .card7, .card8, .card9 {
+    width: 22%; /* Keep 4 cards in a row */
+    margin-bottom: 10px;
+  }
+
+  /* For very small screens, stack cards */
+  @media (max-width: 480px) {
+    .card6, .card7, .card8, .card9 {
+      width: 95%;
+      /* margin: 10px auto; */
+     
+      
+    }
+  }
+
+  /* Icons center */
+  .img1, .img2, .img3 {
+    display: block;
+    margin: 15px auto;
+  }
+}
+
+
+
